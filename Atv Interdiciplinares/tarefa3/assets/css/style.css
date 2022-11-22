@@ -1,0 +1,112 @@
+* {
+    padding: 0 0 0 0;
+    background: None;
+}
+
+
+body{
+    background-color: rgb(24, 24, 24);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    background: rgba(241, 241, 245, 0.192);
+    border-radius: 15px;
+    width: max-content;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 32px;
+}
+
+.icon {
+    display: block;
+    position: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header h1 {
+    text-decoration: wavy;
+    text-shadow: rgba(0, 100, 250, 0.74) 4px 4px 4px;
+    padding: 5px;
+    padding-top: 0;
+    display: block;
+}
+
+.container {
+    width: fit-content;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    padding: 25px 50px;
+    background: rgba(99, 128, 255, 0.877);
+}
+
+form {
+    padding-right: 100px;
+}
+
+#loginForm .label{
+    position: block;
+    display: flex;
+    padding: 20px 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form input:hover {
+    border: 2px solid aqua;
+}
+
+form input:focus {
+    outline: 2px solid rgb(0, 129, 129);
+}
+
+button {
+    cursor: pointer;
+    border: 0px solid rgba(255, 255, 255, 0);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons {
+    margin-top: 25px;
+    position: block;
+    display: block;
+    
+}
+
+#loginButton {
+    background-color: rgb(19, 105, 19);
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+}
+
+#resetButton {
+    background-color: rgb(202, 0, 0);
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#loginButton:hover {
+    color: black;
+    background-color: rgb(144, 253, 153);
+}
+
+#resetButton:hover {
+    color: black;
+    background-color: rgb(252, 146, 146);
+}

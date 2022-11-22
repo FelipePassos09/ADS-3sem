@@ -1,0 +1,21 @@
+Considere uma empresa que fabrica peças para aeronaves. Ela comprou um novo software de simulações a fim de avaliar o projeto inicial das peças que serão fabricadas. Então, a empresa necessita de servidores de alto desempenho para realizar simulações. A ideia inicial da empresa era instalar sua própria infraestrutura de TI. Porém, o plano de investimento inicial apresentou custos muitos elevados. Sendo assim, você foi acionado pela empresa para avaliar a viabilidade do uso de um ambiente em nuvem. Seu primeiro passo será elaborar um parecer técnico sobre as vantagens e possíveis dificuldades que a fabricante teria ao adotar soluções de computação em nuvem para alocação e operação dos recursos de TI. Dessa forma, você propõe realizar uma análise comparativa das vantagens e desvantagens do uso de computação em nuvem para esse caso em particular. Assim, surgem os seguintes questionamentos: é necessário sigilo sobre os dados da empresa? O tempo e a taxa de utilização dos servidores necessários para execução das simulações?
+
+Inicialmente iremos desprezar os requisitos dos sistemas referidos, as políticas e cláusulas contratuais envolvendo a(s) licença(s) e necessidades particulares como compartilhamento e multi-usuários. Dito isto podemos elencar da seguinte maneira:
+
+Vantagens:
+1. Custo reduzido à curto prazo.
+2. Simplicidade e menor carga de trabalho para implantação inicial.
+3. Inexistência de custos e esforço com manutenção de instalações físicas.
+4. Maior flexibilidade de recursos e facilidade de expansão e/ou upgrade.
+
+Desvantagens:
+1. Maior fragilidade quanto à segurança.
+2. Menor autonomia e liberdade quanto à implementação.
+3. Menor, também, possibilidades de porsonalização.
+4. Planejamento detalhado quanto à necessidades de descontinuação ou migração de solução.
+
+Além disso, temos que mensurar o tempo x o custo que será adotado, nesse caso, sendo dedicado exclusivamente à execução de uma simulação (software) poderá haver a possibilidade de programar o desligamento das VM's de acordo com horários pré-determinados, desse modo mitigando parte do custo.
+
+A segurança quanto à violações e perda de dados deve ser adotada com o uso de firewall e uma VPC ou Cloud Privada, de modo que apenas usuários conhecidos e com permissões corretas possam acessar e compartilhar os dados, além de não haver compartilhamento de recursos com terceiros. Neste caso é desaconselhado o uso de nuvens Públicas ou Comunitárias, além de não se poder abrir mão de mecanismos de conexão criptografados e/ou VPN's para a conexão com os recursos que serão utilizados.
+
+Uma vez que o uso de Cloud tem se tornado tendência há a percepção de que o mesmo é uma solução viável em 100% dos casos, porém deve-se estudar a necessidade de modo que não haja a aplicação do recurso desnecessariamente pois, há casos onde o investimento incial, embora pareça alto, seja menor à médio prazo. Para tanto é importante sempre observarmos o escopo da necessidade a ser atendida antes de seguirmos com a implementação de um recurso de infraestrutura. Nesse caso, o ideal não é avaliar pela solução vantagens e desvantagens e sim avaliar o problema a ser resolvido.
