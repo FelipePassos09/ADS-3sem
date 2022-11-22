@@ -27,7 +27,6 @@ function setNewPage(username, password, message){
 
     p.innerHTML = `Olá ${username}! <br />A senha ${password} está correta!<br />${message}`;
 
-
     principal.innerHTML = "";
     principal.appendChild(p);
 }
